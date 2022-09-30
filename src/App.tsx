@@ -1,26 +1,43 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
-function App() {
+import { AdminPage } from './features/AdminPage';
+import { HomePage } from './features/HomePage';
+import {CertificationsPage } from './features/CertificationsPage';
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
+ import {  DividerStack } from './features/core/Navbar';
+debugger;
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div>
+      <DividerStack />
+
+      <Routes>
+        <Route path="/home" element={ <HomePage />} />
+        <Route path="/settings" element={ <CertificationsPage />} />
+        <Route path="/admin" element={ <AdminPage /> } />
+        {/* <Route path="*" element={
+          <Navigate to="/home" />
+        } /> */}
+      </Routes>
     </div>
+  </BrowserRouter>
   );
-}
+};
 
 export default App;
+
+// function App() {
+//   return (
+//     <div className="App">
+//      
+//     </div>
+//   );
+// }
+
+// export default App;
