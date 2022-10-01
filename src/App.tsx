@@ -14,13 +14,13 @@ debugger;
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-    <div>
+    <div className="color" >
       <DividerStack />
 
       <Routes>
         <Route path="/home" element={ <HomePage />} />
         <Route path="/settings" element={ <CertificationsPage />} />
-        <Route path="/admin" element={ <AdminPage /> } />
+        <Route path="/admin" element={ <AdminPage  /> } />
         {/* <Route path="*" element={
           <Navigate to="/home" />
         } /> */}

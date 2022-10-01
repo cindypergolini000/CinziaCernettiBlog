@@ -17,7 +17,7 @@ export const AdminPage = () => {
     Work Experience
     
     </h1>
-    <Card sx={{ maxWidth: 1000 }} className='SectionHeader'>
+    <Card sx={{ maxWidth: 1000,bgcolor:' #52607a', color:'' }} >
       <CardContent>
       <Typography>November 2020 - Now</Typography>
       <img src={foto} className="AvanadeLogo" alt="logo" />
@@ -36,8 +36,8 @@ export const AdminPage = () => {
     <h1>
    Education
     </h1>
-    <Card sx={{ maxWidth: 1000 }} className='SectionHeader'>
-      <CardContent>
+    <Card sx={{ maxWidth: 1000 }} >
+      <CardContent   sx={{bgcolor:' #52607a', color:''}} >
       <Typography>September 2017 - October 2020</Typography>
         <Typography>Università di Trento</Typography>
         <Typography gutterBottom variant="h5" component="div">

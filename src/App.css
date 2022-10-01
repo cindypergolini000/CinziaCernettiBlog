@@ -28,6 +28,11 @@
   }
 
 }
+.navBarItems{
+  text-align: center;
+  background-color: #282c34;
+}
+
 .navBar {
   text-align: center;
   background-color: #282c34;
@@ -38,7 +43,9 @@
   justify-content: center;
   font-size: calc(30px + 2vmin);
 
+ 
 }
+
 .certificationslist{
 border-style:dashed;
  border-width: 5px;

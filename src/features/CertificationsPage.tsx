@@ -54,8 +54,10 @@ export default function CertificationsList() {
   };
 
   return (
+    
     <List className="App-header2"
-      sx={{ width: '100%', maxWidth: 800, maxHeight:'20cm', bgcolor: ' #282c34' }}
+      sx={{ width: '100%', maxWidth: 800, maxHeight:'20cm', bgcolor: ' #282c34', boxShadow: 3,
+      borderRadius: 5 , margin: 1 }}
       component="nav"
       aria-labelledby="nested-list-subheader"
       subheader={
