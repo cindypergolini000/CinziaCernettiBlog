@@ -14,9 +14,8 @@ debugger;
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-    <div className="color" >
+    <div className="App-header" >
       <DividerStack />
-
       <Routes>
         <Route path="/home" element={ <HomePage />} />
         <Route path="/settings" element={ <CertificationsPage />} />
@@ -25,6 +24,7 @@ const App: React.FC = () => {
           <Navigate to="/home" />
         } /> */}
       </Routes>
+     
     </div>
   </BrowserRouter>
   );
