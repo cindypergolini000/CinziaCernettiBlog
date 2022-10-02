@@ -17,7 +17,7 @@ export const AdminPage = () => {
     Work Experience
     
     </h1>
-    <Card sx={{ maxWidth: 1000,bgcolor:' #52607a', color:'' }} >
+    <Card sx={{ maxWidth: 1000,bgcolor:'#7b92c0', color:'' }} >
       <CardContent>
       <Typography>November 2020 - Now</Typography>
       <img src={foto} className="AvanadeLogo" alt="logo" />
@@ -25,7 +25,7 @@ export const AdminPage = () => {
         <Typography gutterBottom variant="h5" component="div">
            Artificial Intelligence Software developer
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="h4" color="text.secondary">
  EXPERTISE: .NET, Chatbots,  Microsoft Cognitive Services, Back-End, SQL-Server, Microsoft Azure, Javascript, Typescript, React</Typography>
       </CardContent>
     
@@ -37,13 +37,13 @@ export const AdminPage = () => {
    Education
     </h1>
     <Card sx={{ maxWidth: 1000 }} >
-      <CardContent   sx={{bgcolor:' #52607a', color:''}} >
+      <CardContent   sx={{bgcolor:'#7b92c0', color:''}} >
       <Typography>September 2017 - October 2020</Typography>
         <Typography>Università di Trento</Typography>
         <Typography gutterBottom variant="h5" component="div">
            Laurea Magistrale in fisica
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="h4" color="text.secondary">
           Tesi dal titolo "Preliminary Measurement of Galactic Halo thickness from the isotopic separation of Beryllium from cosmic rays with AMS02 experiment data" 
         </Typography>
      

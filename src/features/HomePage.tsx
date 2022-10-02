@@ -1,6 +1,6 @@
 import React  from 'react';
 import logo from './logo.svg';
-import foto from './fotoBadge2.jpg'
+import foto from './Me.jpeg'
 import { NavLink } from 'react-router-dom';
 
 export const HomePage = () => {
@@ -10,7 +10,7 @@ export const HomePage = () => {
       <h1 >
      Welcome to my developer blog.
          </h1>
-         <div className="right"> <h2>I am an AI developer and Cloud computing advocate specialized in Microsoft technology stack. </h2> <h2 >This website is built using React-TS</h2></div>
+         <div className="right"> <h2>I am an AI developer and cloud computing advocate specialized in Microsoft technology stack. </h2> <h2 >This website is built using React-TS</h2></div>
       <img src={foto} className="profilePhoto, App-logo1" alt="logo" />
      
       <div className="contact2">
