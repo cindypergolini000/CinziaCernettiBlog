@@ -24,6 +24,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const certifications: CertificationProps [] = [
+  { name: "Exam DP-100: Designing and Implementing a Data Science Solution on Azure", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/dp-100',  logoUri:'WindowsLogo'},
   { name: "Azure Fundamentals (AZ-900)", certificateUri: 'https://docs.microsoft.com/en-us/learn/certifications/exams/az-900',  logoUri:'WindowsLogo'},
   { name: "Azure AI Fundamentals (AI-900)", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/ai-900' , logoUri:'WindowsLogo'},
   { name: "Azure AI Associate Expert (AI-102)", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/ai-102' , logoUri: 'WindowsLogo'},
