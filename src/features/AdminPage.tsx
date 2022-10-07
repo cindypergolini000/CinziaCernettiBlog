@@ -39,12 +39,12 @@ export const AdminPage = () => {
     <Card sx={{ maxWidth: 1000 }} >
       <CardContent   sx={{bgcolor:'#7b92c0', color:''}} >
       <Typography>September 2017 - October 2020</Typography>
-        <Typography>Università di Trento</Typography>
+        <Typography>University Trento</Typography>
         <Typography gutterBottom variant="h5" component="div">
-           Laurea Magistrale in fisica
+           Master degree in Physics
         </Typography>
         <Typography variant="h4" color="text.secondary">
-          Tesi dal titolo "Preliminary Measurement of Galactic Halo thickness from the isotopic separation of Beryllium from cosmic rays with AMS02 experiment data" 
+          Thesis title:"Preliminary Measurement of Galactic Halo thickness from the isotopic separation of Beryllium from cosmic rays with AMS02 experiment data" 
         </Typography>
      
       </CardContent>
