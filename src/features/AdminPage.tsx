@@ -26,7 +26,7 @@ export const AdminPage = () => {
            Artificial Intelligence Software developer
         </Typography>
         <Typography variant="h4" color="text.secondary">
- EXPERTISE: .NET, Chatbots,  Microsoft Cognitive Services, Back-End, SQL-Server, Microsoft Azure, Javascript, Typescript, React</Typography>
+ EXPERTISE: C#, Python, Chatbots,  Microsoft Cognitive Services, Back-End, SQL-Server, Microsoft Azure, Javascript, Typescript, React</Typography>
       </CardContent>
     
     </Card>
