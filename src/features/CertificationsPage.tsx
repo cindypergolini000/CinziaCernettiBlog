@@ -61,6 +61,10 @@ export default function CertificationsList() {
     if(isonGoing) return "inProgress" ;else {return "display:none;"}
     
   };
+  function isongoingtext  (isonGoing:boolean):string  {
+    if(isonGoing) return "In Progress!!" ;else {return ""}
+    
+  };
 
   return (
     
@@ -86,7 +90,7 @@ export default function CertificationsList() {
          
         <div><Link href={c.certificateUri} className="scrittopiccolo">{c.name} </Link></div>
         </div>
-        <div className={classname(c.isOnGoing )}>In Progress!!</div>
+        <div className={classname(c.isOnGoing )}>{isongoingtext(c.isOnGoing)}</div>
        
        
       </ListItemButton>)}
