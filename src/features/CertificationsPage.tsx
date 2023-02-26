@@ -24,11 +24,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const certifications: CertificationProps [] = [
-  { name: "Exam DP-100: Designing and Implementing a Data Science Solution on Azure", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/dp-100',  logoUri:'WindowsLogo'},
-  { name: "Azure Fundamentals (AZ-900)", certificateUri: 'https://docs.microsoft.com/en-us/learn/certifications/exams/az-900',  logoUri:'WindowsLogo'},
-  { name: "Azure AI Fundamentals (AI-900)", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/ai-900' , logoUri:'WindowsLogo'},
-  { name: "Azure AI Associate Expert (AI-102)", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/ai-102' , logoUri: 'WindowsLogo'},
-  { name: "Microsoft Power Platform Fundamentals (PL-900)", certificateUri: 'https://learn.microsoft.com/it-it/certifications/exams/pl-900' , logoUri: 'WindowsLogo'},
+  { name: "Exam DP-100: Designing and Implementing a Data Science Solution on Azure", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/dp-100',  logoUri:'WindowsLogo', isOnGoing:false},
+  { name: "Azure Fundamentals (AZ-900)", certificateUri: 'https://docs.microsoft.com/en-us/learn/certifications/exams/az-900',  logoUri:'WindowsLogo',isOnGoing:false},
+  { name: "Azure AI Fundamentals (AI-900)", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/ai-900' , logoUri:'WindowsLogo',isOnGoing:false},
+  { name: "Azure AI Associate Expert (AI-102)", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/ai-102' , logoUri: 'WindowsLogo',isOnGoing:false},
+  { name: "Microsoft Power Platform Fundamentals (PL-900)", certificateUri: 'https://learn.microsoft.com/it-it/certifications/exams/pl-900' , logoUri: 'WindowsLogo',isOnGoing:false},
+  { name: "Azure Developer Associate (AZ-204-900)", certificateUri: 'https://learn.microsoft.com/en-us/certifications/exams/az-204' , logoUri: 'WindowsLogo',isOnGoing:true}
 
 ];
 
@@ -40,6 +41,7 @@ interface CertificationProps {
   name: string;
   certificateUri: string;
   logoUri:'WindowsLogo'|null;
+  isOnGoing: boolean;
 }
 
 
@@ -49,9 +51,15 @@ interface CertificationProps {
 
 export default function CertificationsList() {
   const [open, setOpen] = React.useState(true);
+  let  showstatuscertification="display:none;";
+
 
   const handleClick = () => {
     setOpen(!open);
+  };
+  function classname  (isonGoing:Boolean):string  {
+    if(isonGoing) return "inProgress" ;else {return "display:none;"}
+    
   };
 
   return (
@@ -78,6 +86,7 @@ export default function CertificationsList() {
          
         <div><Link href={c.certificateUri} className="scrittopiccolo">{c.name} </Link></div>
         </div>
+        <div className={classname(c.isOnGoing )}>In Progress!!</div>
        
        
       </ListItemButton>)}

@@ -18,8 +18,9 @@ const App: React.FC = () => {
       <DividerStack />
       <Routes>
         <Route path="/home" element={ <HomePage />} />
-        <Route path="/settings" element={ <CertificationsPage />} />
-        <Route path="/admin" element={ <AdminPage  /> } />
+        <Route path="/certifications" element={ <CertificationsPage />} />
+        <Route path="/education" element={ <AdminPage  /> } />
+         <Route path="*" element={ <HomePage /> } />
         {/* <Route path="*" element={
           <Navigate to="/home" />
         } /> */}
