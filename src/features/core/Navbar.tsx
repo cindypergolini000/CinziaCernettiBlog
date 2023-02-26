@@ -54,13 +54,13 @@ export const DividerStack=()=> {
       <WorkIcon fontSize='large'/>
      <NavLink
            className={setActive}
-           to="/admin">  <h5>Education and Work Experience</h5> </NavLink>
+           to="/certifications">  <h5>Education and Work Experience</h5> </NavLink>
      </Item>
      <Item className="color">
       <MilitaryTechIcon fontSize='large'/>
      <NavLink
            className={setActive}
-           to="/settings"> <h5>Licenses and certifications</h5>  </NavLink>
+           to="/education"> <h5>Licenses and certifications</h5>  </NavLink>
      </Item>
    </Stack>
  </div>
